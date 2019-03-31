@@ -1,9 +1,15 @@
 <?php
 
     return [
-        'NOME_BD' =>  'banco',
-        'PASS_BD' =>  '123'
-
+        'BD_HOST' =>  'localhost',
+        'BD_DATABASE' =>  '',
+        'BD_CHARSET' =>  'UTF-8',
+        'BD_USERNAME' =>  '',
+        'BD_PASSWORD' =>  ''
+        //Variavel do email
     ]
 
+
+
+    
 ?>

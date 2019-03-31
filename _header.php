@@ -16,5 +16,7 @@
 </head>
 <body>
 
-<p>Header</p>
-<hr>
+<div class="container-fluid header text-center">
+    <p>Cabeçalho</p>
+
+</div>

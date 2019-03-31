@@ -7,6 +7,8 @@
 
 ?>
 
-<p>Inicio</p>
-<a href="?a=about">About |</a>
-<a href="?a=setup">Setup |</a>
+<div class="container-fluid pad-20">
+    <div class="text-center">
+        <a href="?a=setup" class="btn btn-primary">Setup</a>
+    </div>
+</div>

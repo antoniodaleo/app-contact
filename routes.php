@@ -20,7 +20,11 @@
         // Apresentar a pagina about
         case 'about';           include_once('about.php'); break; 
         // Abre o menu do setup
-        case 'setup';           include_once('setup/instalacao.php'); break;  
+        case 'setup';           include_once('setup/setup.php'); break;  
+
+        //=========================
+        // Crear o Banco de dados
+        case 'create_db';       include_once('setup/setup.php'); break;  
 
     }
 
