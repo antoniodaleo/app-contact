@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,EAAE;EACE,MAAM,EAAE,aAAa",
+"sources": ["_border.scss"],
+"names": [],
+"file": "main.css"
+}
