@@ -4,17 +4,35 @@
     if(!isset($_SESSION['a'])){
         exit(); 
     }   
-
+    // Se la var non e´ definita , allora mi attribuisci inizio 
     $a = 'inicio'; 
 
+    //Se é definita me la prendi
     if(isset($_GET['a'])){
         $a = $_GET['a']; 
 
     }
 
+
+    $_SESSION['id_utilizador'] = 1; 
+    // Verificar o login
+
+    funcoes::DestroiSessao(); 
+
+    if(!funcoes::VerificarLogin()){
+        // Se non c é nessuna id allora mi mostri il login
+        $a = 'login'; 
+    }
+
+
+
     //Routes-===============================
 
     switch($a){
+        //Login 
+        case 'login'; include_once('users/login.php'); break; 
+
+
         // Apresentar a pagina inicial
         case 'inicio';         include_once('inicio.php');  break;  
         // Apresentar a pagina about
@@ -22,9 +40,11 @@
         // Abre o menu do setup
         case 'setup';           include_once('setup/setup.php'); break;  
 
+
         //=========================
         // Crear o Banco de dados
-        case 'create_db';       include_once('setup/setup.php'); break;  
+        case 'setup_criar_bd';       include_once('setup/setup_criar_bd.php'); break;  
+        case 'setup_inserir_utilizadores'; include_once('setup/setup_inserir_utilizadores.php'); break;
 
     }
 
