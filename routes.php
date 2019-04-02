@@ -13,11 +13,9 @@
 
     }
 
-
-    $_SESSION['id_utilizador'] = 1; 
     // Verificar o login
 
-    funcoes::DestroiSessao(); 
+    //funcoes::DestroiSessao(); 
 
     if(!funcoes::VerificarLogin()){
         // Se non c é nessuna id allora mi mostri il login
